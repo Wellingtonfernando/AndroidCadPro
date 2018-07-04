@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityEditarProduto">
+
+    <EditText
+        android:id="@+id/edtIdProduto"
+        android:hint="Código de Barras"
+        android:inputType="numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/edtNomeProduto"
+        android:hint="Nome do Produto"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/edtquantidadeProduto"
+        android:hint="Quantidade de Produtos"
+        android:inputType="numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/edtPrecoProduto"
+        android:hint="Preço do Produto"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/edtNomeFuncionario"
+        android:hint="Nome do Funcionario"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="left"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:background="@color/colorretacleorange"
+                android:padding="10dp"
+                android:src="@drawable/ic_check_black_24dp" />
+            <Button
+                android:id="@+id/btnSalvarProduto"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:background="@android:color/transparent"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
